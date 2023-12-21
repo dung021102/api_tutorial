@@ -7,11 +7,14 @@ const port = 3000
 app.use(morgan('combined'))
 
 
-
-
 app.get('/', (req, res) => {
    
   res.send('home');
+})
+
+app.get('/hone', (req, res) => {
+   
+  res.send('home 1');
 })
 
 app.listen(port, () => {
